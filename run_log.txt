@@ -1,0 +1,36 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Device: cpu
+Loading UTKFace-Cropped from local Hugging Face cache...
+Full dataset size: 23708
+Usable samples: 6000 (skipped 1 with unparseable filenames)
+X shape: (6000, 3, 64, 64)  Age range: 1.0-110.0  Gender balance: [3144 2856]
+Train: 4200  Val: 900  Test: 900
+[CNN] Epoch 1/10  train_loss=19.305  val_loss=16.027  val_age_MAE=15.35yrs  val_gender_acc=0.5356  (9.3s)
+[CNN] Epoch 2/10  train_loss=16.724  val_loss=16.428  val_age_MAE=15.74yrs  val_gender_acc=0.4789  (10.8s)
+[CNN] Epoch 3/10  train_loss=16.452  val_loss=15.495  val_age_MAE=14.84yrs  val_gender_acc=0.6211  (12.3s)
+[CNN] Epoch 4/10  train_loss=15.903  val_loss=14.788  val_age_MAE=14.20yrs  val_gender_acc=0.6911  (13.9s)
+[CNN] Epoch 5/10  train_loss=15.254  val_loss=14.452  val_age_MAE=13.87yrs  val_gender_acc=0.7022  (15.6s)
+[CNN] Epoch 6/10  train_loss=14.878  val_loss=14.923  val_age_MAE=14.32yrs  val_gender_acc=0.6467  (17.1s)
+[CNN] Epoch 7/10  train_loss=14.489  val_loss=13.684  val_age_MAE=13.09yrs  val_gender_acc=0.6878  (18.8s)
+[CNN] Epoch 8/10  train_loss=13.830  val_loss=12.962  val_age_MAE=12.40yrs  val_gender_acc=0.7233  (20.6s)
+[CNN] Epoch 9/10  train_loss=13.392  val_loss=12.352  val_age_MAE=11.80yrs  val_gender_acc=0.7178  (22.2s)
+[CNN] Epoch 10/10  train_loss=13.123  val_loss=13.026  val_age_MAE=12.50yrs  val_gender_acc=0.7422  (24.0s)
+[CNN] TEST  age_MAE=11.85 years   gender_accuracy=0.7178
+[DNN] Epoch 1/10  train_loss=19.225  val_loss=16.499  val_age_MAE=15.91yrs  val_gender_acc=0.6889  (25.1s)
+[DNN] Epoch 2/10  train_loss=17.084  val_loss=15.171  val_age_MAE=14.54yrs  val_gender_acc=0.6622  (25.8s)
+[DNN] Epoch 3/10  train_loss=15.695  val_loss=14.231  val_age_MAE=13.66yrs  val_gender_acc=0.7033  (26.4s)
+[DNN] Epoch 4/10  train_loss=14.639  val_loss=13.340  val_age_MAE=12.81yrs  val_gender_acc=0.7367  (27.0s)
+[DNN] Epoch 5/10  train_loss=14.268  val_loss=12.799  val_age_MAE=12.25yrs  val_gender_acc=0.7344  (27.5s)
+[DNN] Epoch 6/10  train_loss=14.059  val_loss=13.235  val_age_MAE=12.72yrs  val_gender_acc=0.7389  (28.0s)
+[DNN] Epoch 7/10  train_loss=13.736  val_loss=12.805  val_age_MAE=12.24yrs  val_gender_acc=0.7167  (28.6s)
+[DNN] Epoch 8/10  train_loss=13.645  val_loss=12.375  val_age_MAE=11.78yrs  val_gender_acc=0.6856  (29.2s)
+[DNN] Epoch 9/10  train_loss=13.271  val_loss=12.784  val_age_MAE=12.27yrs  val_gender_acc=0.7544  (29.8s)
+[DNN] Epoch 10/10  train_loss=13.779  val_loss=12.423  val_age_MAE=11.92yrs  val_gender_acc=0.7700  (30.3s)
+[DNN] TEST  age_MAE=11.49 years   gender_accuracy=0.7311
+
+============================================================
+FINAL RESULTS
+============================================================
+CNN: age MAE = 11.85 years, gender accuracy = 0.7178
+DNN: age MAE = 11.49 years, gender accuracy = 0.7311
+Subsample used: 6000/23708 images  Total elapsed: 30.7s

@@ -1,0 +1,7 @@
+UTKFace Age/Gender Prediction - real run results
+Subsample used: 6000 of 23708 total images (CPU-only feasibility)
+Image size: 64x64 RGB
+Train/Val/Test: 4200/900/900
+
+CNN: age MAE = 11.85 years, gender accuracy = 0.7178
+DNN: age MAE = 11.49 years, gender accuracy = 0.7311
