@@ -14,7 +14,8 @@ from datasets import load_dataset
 from PIL import Image
 
 t0 = time.time()
-OUT_DIR = os.environ.get("OUT_DIR", ".")
+OUT_DIR = os.environ.get("OUT_DIR", "results")
+os.makedirs(OUT_DIR, exist_ok=True)
 IMG_SIZE = 64
 SUBSAMPLE = 6000       # scaled down from the full 23,708 for CPU-only feasibility
 BATCH_SIZE = 64

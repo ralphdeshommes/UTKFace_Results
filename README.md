@@ -14,7 +14,11 @@ Multi-task PyTorch models that predict a person's **age** (regression) and **gen
 | DNN | 11.49 years | 73.1% |
 | CNN | 11.85 years | 71.8% |
 
-Training curves and confusion matrices are in this repo.
+Training curves, confusion matrices, and the run log are in [`results/`](results/).
+
+![DNN training curves](results/DNN_training_curves.png)
+![CNN training curves](results/CNN_training_curves.png)
+![DNN gender confusion matrix](results/DNN_gender_confusion_matrix.png)
 
 ## Limitations
 - Only 6,000 of the 23,708 images were used, at low resolution, for 10 epochs, so these are baselines. Published models score much higher.
@@ -24,7 +28,7 @@ Training curves and confusion matrices are in this repo.
 ## Run it
 ```
 pip install numpy matplotlib seaborn torch scikit-learn datasets pillow
-OUT_DIR=. python run_utkface.py
+python run_utkface.py
 ```
 The dataset downloads automatically on first run.
 
