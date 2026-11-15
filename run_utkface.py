@@ -14,7 +14,7 @@ from datasets import load_dataset
 from PIL import Image
 
 t0 = time.time()
-OUT_DIR = r"C:\Users\Ralph\Desktop\UTKFace_Results"
+OUT_DIR = os.environ.get("OUT_DIR", ".")
 IMG_SIZE = 64
 SUBSAMPLE = 6000       # scaled down from the full 23,708 for CPU-only feasibility
 BATCH_SIZE = 64
